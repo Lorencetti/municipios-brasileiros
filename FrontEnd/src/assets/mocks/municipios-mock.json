@@ -1,0 +1,99 @@
+[
+  {
+    "nome": "Porto Alegre",
+    "codigoMunicipio": 4314902,
+    "estado": "Rio Grande do Sul",
+    "codigoEstado": 43,
+    "capital": true,
+    "populacao": 1484941
+  },
+  {
+    "nome": "Canoas",
+    "codigoMunicipio": 4304606,
+    "estado": "Rio Grande do Sul",
+    "codigoEstado": 43,
+    "capital": false,
+    "populacao": 347657
+  },
+  {
+    "nome": "Fortaleza",
+    "codigoMunicipio": 2304400,
+    "estado": "Ceará",
+    "codigoEstado": 23,
+    "capital": true,
+    "populacao": 2686612
+  },
+  {
+    "nome": "Campinas",
+    "codigoMunicipio": 3509502,
+    "estado": "São Paulo",
+    "codigoEstado": 35,
+    "capital": false,
+    "populacao": 1213792
+  },
+  {
+    "nome": "Curitiba",
+    "codigoMunicipio": 4106902,
+    "estado": "Paraná",
+    "codigoEstado": 41,
+    "capital": true,
+    "populacao": 1963726
+  },
+  {
+    "nome": "Feira de Santana",
+    "codigoMunicipio": 2910800,
+    "estado": "Bahia",
+    "codigoEstado": 29,
+    "capital": false,
+    "populacao": 619609
+  },
+  {
+    "nome": "Manaus",
+    "codigoMunicipio": 1302603,
+    "estado": "Amazonas",
+    "codigoEstado": 13,
+    "capital": true,
+    "populacao": 2219580
+  },
+  {
+    "nome": "Ribeirão Preto",
+    "codigoMunicipio": 3543402,
+    "estado": "São Paulo",
+    "codigoEstado": 35,
+    "capital": false,
+    "populacao": 711825
+  },
+  {
+    "nome": "Recife",
+    "codigoMunicipio": 2611606,
+    "estado": "Pernambuco",
+    "codigoEstado": 26,
+    "capital": true,
+    "populacao": 1653461
+  },
+  {
+    "nome": "Joinville",
+    "codigoMunicipio": 4209102,
+    "estado": "Santa Catarina",
+    "codigoEstado": 42,
+    "capital": false,
+    "populacao": 616323
+  },
+  {
+    "nome": "Salvador",
+    "codigoMunicipio": 2927408,
+    "estado": "Bahia",
+    "codigoEstado": 29,
+    "capital": true,
+    "populacao": 2886698
+  },
+  {
+    "nome": "São Bernardo do Campo",
+    "codigoMunicipio": 3548708,
+    "estado": "São Paulo",
+    "codigoEstado": 35,
+    "capital": false,
+    "populacao": 844483
+  }
+]
+
