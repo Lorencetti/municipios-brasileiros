@@ -40,6 +40,15 @@ export class MunicipioListaComponent {
   displayedColumns: string[] = ['nome', 'estado', 'populacao', 'capital'];
   dataSource = new MatTableDataSource<Municipio>();
 
+  removeFilters() {
+    this.dataSource.filter = '';
+    this.searchTermEstado = new FormControl('');
+    this.searchTermMunicipio = new FormControl('');
+    this.minPopControl = new FormControl('');
+    this.maxPopControl = new FormControl('');
+    this.loadMunicipios();
+  }
+
   private municipioService = inject(MunicipioService);
   filterMunicipios() {
     this.loadMunicipios(); // Importante resetar a lista antes de filtrar, caso esteja filtrada previamente
@@ -58,7 +67,7 @@ export class MunicipioListaComponent {
     if (!sigla) {
       return;
     }
-    this.dataSource.data = this.dataSource.data.filter(m => m.estado.toUpperCase() === sigla);
+    this.dataSource.filter = sigla;
     //this.dataSource.paginator = this.paginator;
     //this.dataSource.sort = this.sort;
   }
@@ -79,6 +88,7 @@ export class MunicipioListaComponent {
         this.dataSource.data = municipios;
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
+        this.dataSource.filter = ''; // Limpa o filtro para evitar problemas de filtragem
         console.log(min,municipios);
       });
       return;
@@ -87,6 +97,7 @@ export class MunicipioListaComponent {
       this.dataSource.data = municipios;
       this.dataSource.paginator = this.paginator;
       this.dataSource.sort = this.sort;
+      this.dataSource.filter = ''; // Limpa o filtro para evitar problemas de filtragem
       console.log(min,max,municipios);
     });
   }
@@ -96,6 +107,7 @@ export class MunicipioListaComponent {
       this.dataSource.data = municipios;
       this.dataSource.paginator = this.paginator;
       this.dataSource.sort = this.sort;
+      this.dataSource.filter = ''; // Limpa o filtro para evitar problemas de filtragem
       console.log(municipios);
     });
   }
@@ -105,6 +117,7 @@ export class MunicipioListaComponent {
       this.dataSource.data = municipios;
       this.dataSource.paginator = this.paginator;
       this.dataSource.sort = this.sort;
+      this.dataSource.filter = ''; // Limpa o filtro para evitar problemas de filtragem
       console.log(municipios);
     });
   }

@@ -6,9 +6,10 @@
         <input matInput [formControl]="searchTermMunicipio" (input)="filterMunicipios()" placeholder="Ex: Porto Alegre" />
     </mat-form-field>
     <mat-form-field appearance="outline" class="search-bar">
-        <mat-label>Buscar Estado</mat-label>
-        <input matInput [formControl]="searchTermEstado" (input)="filterEstados()" placeholder="Ex: Rio Grande do Sul" />
+        <mat-label>Buscar Estado (por sigla)</mat-label>
+        <input matInput [formControl]="searchTermEstado" (input)="filterEstados()" placeholder="Ex: RS" />
     </mat-form-field>
+    <button mat-raised-button color="primary" (click)="removeFilters()">Limpar</button>
 </div>
 <div class="filters">
     <mat-form-field appearance="outline" class="search-bar">

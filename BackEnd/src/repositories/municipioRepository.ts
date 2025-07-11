@@ -50,7 +50,7 @@ export const MunicipioRepository = {
 
   async estadosComCapitalNaoMaisPopulosa() {
     const result = await client.query(`
-      SELECT estado, nome, populacao
+      SELECT *
       FROM municipios m
       WHERE populacao = (
         SELECT MAX(populacao)
